@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #555;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-form input, #search-form select, #search-form button {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+#results {
+    text-align: center;
+    margin: 20px;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.slider-item {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.slider-item img {
+    max-width: 150px;
+    height: auto;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slider-button.left {
+    left: 0;
+}
+
+.slider-button.right {
+    right: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.btn-save {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.btn-view {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
